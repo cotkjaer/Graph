@@ -10,6 +10,8 @@
 		8F8C22551DCFB5CB00E7DBD9 /* Graph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C224B1DCFB5CB00E7DBD9 /* Graph.framework */; };
 		8F8C225A1DCFB5CB00E7DBD9 /* GraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8C22591DCFB5CB00E7DBD9 /* GraphTests.swift */; };
 		8F8C225C1DCFB5CB00E7DBD9 /* Graph.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8C224E1DCFB5CB00E7DBD9 /* Graph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F8C22661DCFB5D500E7DBD9 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8C22651DCFB5D500E7DBD9 /* Graph.swift */; };
+		8F8C22681DCFB6CA00E7DBD9 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 8F8C22671DCFB6CA00E7DBD9 /* Cartfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		8F8C22541DCFB5CB00E7DBD9 /* GraphTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F8C22591DCFB5CB00E7DBD9 /* GraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTests.swift; sourceTree = "<group>"; };
 		8F8C225B1DCFB5CB00E7DBD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F8C22651DCFB5D500E7DBD9 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		8F8C22671DCFB6CA00E7DBD9 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 		8F8C22411DCFB5CB00E7DBD9 = {
 			isa = PBXGroup;
 			children = (
+				8F8C22671DCFB6CA00E7DBD9 /* Cartfile */,
 				8F8C224D1DCFB5CB00E7DBD9 /* Graph */,
 				8F8C22581DCFB5CB00E7DBD9 /* GraphTests */,
 				8F8C224C1DCFB5CB00E7DBD9 /* Products */,
@@ -72,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				8F8C224E1DCFB5CB00E7DBD9 /* Graph.h */,
+				8F8C22651DCFB5D500E7DBD9 /* Graph.swift */,
 				8F8C224F1DCFB5CB00E7DBD9 /* Info.plist */,
 			);
 			path = Graph;
@@ -149,6 +155,7 @@
 					8F8C224A1DCFB5CB00E7DBD9 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 9HQR3Y4WE5;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					8F8C22531DCFB5CB00E7DBD9 = {
@@ -181,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F8C22681DCFB6CA00E7DBD9 /* Cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F8C22661DCFB5D500E7DBD9 /* Graph.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +331,7 @@
 		8F8C22601DCFB5CB00E7DBD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 9HQR3Y4WE5;
@@ -334,6 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.silverback-it.Graph";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +352,7 @@
 		8F8C22611DCFB5CB00E7DBD9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 9HQR3Y4WE5;
@@ -360,6 +372,7 @@
 		8F8C22631DCFB5CB00E7DBD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 9HQR3Y4WE5;
 				INFOPLIST_FILE = GraphTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +385,7 @@
 		8F8C22641DCFB5CB00E7DBD9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 9HQR3Y4WE5;
 				INFOPLIST_FILE = GraphTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
