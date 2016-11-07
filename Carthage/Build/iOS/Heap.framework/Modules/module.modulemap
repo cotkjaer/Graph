@@ -1,0 +1,10 @@
+framework module Heap {
+  umbrella header "Heap.h"
+
+  export *
+  module * { export * }
+}
+
+module Heap.Swift {
+    header "Heap-Swift.h"
+}

@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import Collections
+import Heap
 
 open class Graph<Vertex: Hashable>
 {
@@ -156,7 +158,7 @@ extension Graph
         
         var visited = [origin : true]
         
-        var frontier: BinaryHeap<Path<Vertex>> = Heap(isOrderedBefore: {$0.total < $1.total})
+        var frontier: BinaryHeap<Path<Vertex>> = BinaryHeap(isOrderedBefore: {$0.total < $1.total})
         
         for edge in edges(from: origin)
         {

@@ -11,7 +11,7 @@ import XCTest
 
 class GraphTests: XCTestCase
 {
-    
+
     func test_init_Graph()
     {
         let _ = Graph<String>()
